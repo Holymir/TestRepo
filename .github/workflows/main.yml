@@ -25,9 +25,10 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: 9.5
-          path: "./token-contract/package.json"
 
       - name: Install
+        with: 
+          path: "./token-contract/package.json"
         run: |
           npm install
       - name: Run Ganache
